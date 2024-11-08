@@ -14,3 +14,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Retrieve wallpaper colors
 # wal -R -q
+
+# Aliases
+alias lg='lazygit'
+alias ls='eza --icons'
