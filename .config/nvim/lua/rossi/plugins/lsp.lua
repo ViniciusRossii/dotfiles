@@ -87,6 +87,7 @@ return {
 			require("lspconfig").eslint.setup({})
 			require("lspconfig").html.setup({})
 			require("lspconfig").tailwindcss.setup({})
+			require("lspconfig").gopls.setup({})
 
 			local cmp = require("cmp")
 
