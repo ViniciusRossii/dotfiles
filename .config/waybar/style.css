@@ -1,80 +1,102 @@
-@import url("/home/rossi/.cache/wal/colors-waybar.css");
-
 * {
-    font-family: 'Radio Canada Big', sans-serif;
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font, monospace";
     font-weight: bold;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 14px;
+    min-height: 0;
 }
 
 window#waybar {
-    background-color: transparent;
-    color: @background;
+    border-radius: 10px;
+    background: #11111b;
+    color: #cdd6f4;
+}
+
+tooltip {
+    background: #010409;
+    border-radius: 10px;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+    margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: @foreground;
+    color: #a6adc8;
 }
 
-
-#workspaces {
-    background-color: @background;
-    padding: 0 5.6px 0 0;
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #010409;
 }
 
-.modules-left {
-    margin-left: 12px;    
+#workspaces button.urgent {
+    color: #11111b;
+    background: #010409;
 }
 
-.modules-right {
-    margin-right: 12px;    
+#workspaces button:hover {
+    background: #010409;
+    color: #cdd6f4;
 }
 
+#window,
+#clock,
 #battery,
 #pulseaudio,
-#backlight,
-#custom-weather {
-    color: @color5; /* color5 */
-    background-color: @background; /* background */
-    margin: 0 15px 0 0px;
-    padding: 0 15px 0 15px; /* top, right, bottom, left */
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#custom-weather,
+#backlight {
+    padding: 0px 14px;
 }
 
-#network {
-    color: @color2; /* color2 */
-    background-color: @background; /* background */
-    margin: 0 0px 0 0px;
-    padding: 0 15px 0 15px; /* top, right, bottom, left */
+#temperature.critical {
+    color: #eba0ac;
+}
+
+#tray {
+    margin-right: 10px;
+}
+
+#workspaces {
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#window {
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 #clock {
-    color: @color3; /* color3 */
-    background-color: @background; /* background */
-    margin: 0 15px 0 0;
-    padding: 0 15px 0 15px;
+    color: #fab387;
+    margin-right: 14px;
 }
 
 #network {
-    color: @color4; /* color4 */
+    color: #f9e2af;
 }
+
+#bluetooth {
+    color: #89b4fa;
+} 
 
 #pulseaudio {
-    color: @color5; /* color5 */
+    color: #89b4fa;
 }
 
-#backlight {
-    color: @color5; /* color5 */
+#pulseaudio.microphone {
+    color: #cba6f7;
 }
 
-#custom-weather {
-    color: @color4; /* color2 */
-    background-color: @background; /* background */
-    padding: 0 15px 0 15px; /* top, right, bottom, left */
-}
-
-#custom-media {
-    color: @color4; /* color2 */
-    background-color: @background; /* background */
-    margin: 0 0px 0 15px;
-    padding: 0 15px 0 15px; /* top, right, bottom, left */
+#battery {
+    color: #a6e3a1;
 }
