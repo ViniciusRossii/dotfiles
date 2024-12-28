@@ -18,3 +18,10 @@ export NVM_DIR="$HOME/.nvm"
 # Aliases
 alias lg='lazygit'
 alias ls='eza --icons'
+
+# bun completions
+[ -s "/home/rossi/.bun/_bun" ] && source "/home/rossi/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
