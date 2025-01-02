@@ -7,6 +7,9 @@ source $ZSH/oh-my-zsh.sh
 # Init Starship
 eval "$(starship init zsh)"
 
+# Setup FZF
+source <(fzf --zsh)
+
 # NVM Config
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
