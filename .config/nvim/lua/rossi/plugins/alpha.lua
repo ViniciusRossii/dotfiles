@@ -17,7 +17,7 @@ return {
       "          Growth isn't always confortable         "
 		}
 
-		-- dashboard.section.header.opts.hl = "String"
+		dashboard.section.header.opts.hl = "String"
 
 		-- vim.api.nvim_set_hl(0, "String", { fg = "#006437", bg = "NONE" })
 
