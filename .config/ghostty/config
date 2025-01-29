@@ -1,4 +1,4 @@
-theme = catppuccin-mocha
+theme = gruvbox-material
 
 font-family = JetBrainsMono Nerd Font
 # font-size = 16
