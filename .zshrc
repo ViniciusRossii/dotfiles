@@ -22,6 +22,9 @@ export NVM_DIR="$HOME/.nvm"
 alias lg='lazygit'
 alias ls='eza --icons'
 
+# Android Sdk Path
+export ANDROID_HOME=/home/$USER/Android/Sdk
+
 # bun completions
 [ -s "/home/rossi/.bun/_bun" ] && source "/home/rossi/.bun/_bun"
 
