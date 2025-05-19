@@ -72,7 +72,6 @@ return {
 				}),
 			})
 			require("lspconfig").cssls.setup({})
-			require("lspconfig").volar.setup({})
 			require("lspconfig").eslint.setup({})
 			require("lspconfig").html.setup({})
 			require("lspconfig").tailwindcss.setup({})
