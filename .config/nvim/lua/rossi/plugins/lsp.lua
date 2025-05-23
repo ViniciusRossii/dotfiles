@@ -35,7 +35,6 @@ return {
 				ensure_installed = {
 					"ts_ls",
 					"cssls",
-					"volar",
 					"eslint",
 					"html",
 					"tailwindcss",
