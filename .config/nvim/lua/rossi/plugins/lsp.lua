@@ -1,6 +1,6 @@
 return {
 	{ "VonHeikemen/lsp-zero.nvim", branch = "v4.x" },
-	{ "williamboman/mason-lspconfig.nvim" },
+	{ "mason-org/mason-lspconfig.nvim" },
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
