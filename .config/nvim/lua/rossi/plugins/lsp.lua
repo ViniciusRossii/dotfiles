@@ -38,43 +38,8 @@ return {
 					"eslint",
 					"html",
 					"tailwindcss",
-					"emmet_ls",
 				},
 			})
-
-			require("lspconfig").ts_ls.setup({
-				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-				require("lspconfig").emmet_ls.setup({
-					capabilities = capabilities,
-					filetypes = {
-						"css",
-						"eruby",
-						"html",
-						-- "javascript",
-						-- "javascriptreact",
-						"less",
-						"sass",
-						-- "typescript",
-						"scss",
-						"svelte",
-						"pug",
-						-- "typescriptreact",
-						"vue",
-					},
-					init_options = {
-						html = {
-							options = {
-								["bem.enabled"] = true,
-							},
-						},
-					},
-				}),
-			})
-			require("lspconfig").cssls.setup({})
-			require("lspconfig").eslint.setup({})
-			require("lspconfig").html.setup({})
-			require("lspconfig").tailwindcss.setup({})
-			require("lspconfig").gopls.setup({})
 
 			local cmp = require("cmp")
 
