@@ -26,13 +26,6 @@ alias lzd='lazydocker'
 # Android Sdk Path
 export ANDROID_HOME=/home/$USER/Android/Sdk
 
-# bun completions
-[ -s "/home/rossi/.bun/_bun" ] && source "/home/rossi/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 # Yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
