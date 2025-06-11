@@ -22,6 +22,7 @@ export NVM_DIR="$HOME/.nvm"
 alias lg='lazygit'
 alias ls='eza --icons'
 alias lzd='lazydocker'
+alias exp='nautilus . & disown'
 
 # Android Sdk Path
 export ANDROID_HOME=/home/$USER/Android/Sdk
