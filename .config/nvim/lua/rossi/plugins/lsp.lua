@@ -38,6 +38,7 @@ return {
 					"eslint",
 					"html",
 					"tailwindcss",
+					"biome",
 				},
 			})
 
