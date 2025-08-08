@@ -27,6 +27,9 @@ alias exp='nautilus . & disown'
 # Android Sdk Path
 export ANDROID_HOME=/home/$USER/Android/Sdk
 
+# Custom GOPATH
+export GOPATH=$HOME/.go
+
 # Yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
