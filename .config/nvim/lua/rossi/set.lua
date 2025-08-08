@@ -13,6 +13,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.backup = false
+vim.opt.swapfile = false
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
@@ -23,8 +24,6 @@ vim.opt.background = "dark"
 vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
-
--- vim.opt.colorcolumn = "80"
 
 vim.cmd("let g:netrw_liststyle = 3")
 
