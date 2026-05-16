@@ -23,12 +23,17 @@ alias lg='lazygit'
 alias ls='eza --icons'
 alias lzd='lazydocker'
 alias exp='nautilus . & disown'
+alias vim="nvim"
+alias hl="start-hyprland"
 
 # Android Sdk Path
 export ANDROID_HOME=/home/$USER/Android/Sdk
 
 # Custom GOPATH
 export GOPATH=$HOME/.go
+
+# Editor
+export EDITOR="vim"
 
 # Yazi
 function y() {
