@@ -17,6 +17,7 @@ return {
 					"html",
 					"tailwindcss",
 					"biome",
+					"lua_ls",
 				},
 			})
 		end,
