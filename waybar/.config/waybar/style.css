@@ -100,3 +100,20 @@ tooltip {
 #battery {
     color: #a6e3a1;
 }
+
+#media {
+  color: #42ff9f;
+  margin-left: 10px;
+}
+
+#custom-media-status {
+  margin-right: 10px;
+}
+
+#custom-media-now-playing {
+  margin-right: 10px;
+}
+
+#custom-media-time {
+  color: #cdd6f4;
+}

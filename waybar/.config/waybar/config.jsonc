@@ -7,7 +7,7 @@
   "passthrough": false,
   "gtk-layer-shell": true,
   "height": 30,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "group/media"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "tray",
@@ -118,10 +118,42 @@
     "on-click": "bluetoothctl toggle",
   },
   "custom/weather": {
-    "exec": "${HOME}/.config/waybar/scripts/get_weather.sh",
+    "exec": "${HOME}/.config/waybar/custom_modules/weather/get_weather.sh",
     "return-type": "json",
     "format": "{}",
     "tooltip": true,
     "interval": 3600,
   },
+  "group/media": {
+    "orientation": "horizontal",
+      "modules": [
+        "custom/media-status",
+        "custom/media-now-playing",
+        "custom/media-time"
+      ]
+    },
+    "custom/media-status": {
+      "exec": "~/.config/waybar/custom_modules/media/media-status.sh",
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl previous",
+      "on-click-right": "playerctl next",
+      "tooltip": false
+    },
+    "custom/media-now-playing": {
+      "exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
+      "escape": true,
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl previous",
+      "on-click-right": "playerctl next",
+      "tooltip": false
+    },
+    "custom/media-time": {
+      "exec": "~/.config/waybar/custom_modules/media/media-time.sh",
+      "interval": 1,
+      "escape": true,
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl previous",
+      "on-click-right": "playerctl next",
+      "tooltip": false
+    }
 }
