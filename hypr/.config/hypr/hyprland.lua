@@ -225,7 +225,7 @@ hl.config({
 		kb_layout = "us",
 		kb_variant = "",
 		kb_model = "",
-		kb_options = "compose:rctrl",
+		kb_options = "compose:rctrl, caps:escape",
 		kb_rules = "",
 
 		follow_mouse = 1,
