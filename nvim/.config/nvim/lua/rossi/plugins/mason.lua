@@ -18,6 +18,7 @@ return {
 					"tailwindcss",
 					"biome",
 					"lua_ls",
+					"jsonls",
 				},
 			})
 		end,
